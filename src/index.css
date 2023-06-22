@@ -8,6 +8,7 @@
     text-decoration: none;
     list-style-type: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding:0;
 }
 
 body{
@@ -22,6 +23,7 @@ body{
     align-items: center;
     padding: 1rem 4rem;
     background-color:var(--green);
+  
 }
 
 .nav .title{
@@ -54,12 +56,12 @@ body{
 .homeContent{
     display: flex;
     align-items: center;
-    padding: 1rem 1.5rem;
     justify-content: center;
     gap:3rem;
     flex-wrap: wrap;
     margin-top:2rem;
     height: 80vh;
+    
 }
 
 .introduction, .imagebox{
@@ -109,7 +111,7 @@ body{
 @keyframes animation {
     0%{
         opacity: 0;
-        transform: translateX(-50%);
+        transform: translateX(-70%);
     }
   
 }
@@ -117,7 +119,7 @@ body{
 @keyframes animationImg {
     0%{
         opacity: 0;
-        transform: translateX(50%);
+        transform: translateX(70%);
     }
 }
 
@@ -125,3 +127,67 @@ body{
 
 
 /* ABOUT CONTENT */
+.aboutContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10rem;
+    flex-wrap: wrap;
+    margin-top:5rem;
+    height: 40vh;
+}
+
+.description, .techs{
+    width:500px;
+    height:100%;
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+
+
+.description p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 28px;
+    color:var(--green);
+    font-weight: bolder;
+}
+
+
+
+
+.techs p{
+    font-size: 28px;
+    color:var(--green);
+    font-weight: bolder;
+}
+
+
+.techs img{
+    width:80px;
+    height:80px;
+    margin-right:2rem;
+}
+
+
+
+
+@keyframes animationBot {
+    0%{opacity: 0; transform:translateY(70%)}
+}
+
+.description{
+    animation: animationBot 1s ease-in;
+
+}
+
+@keyframes animationTop{
+    0%{opacity: 0; transform:translateY(-70%)}
+}
+
+.techs{
+    flex-direction: column;
+    z-index: -1;
+    animation: animationTop 1s ease-in;
+}
