@@ -26,7 +26,7 @@ function Contact() {
           <p>Email: alisangcocarl@gmail.com</p>
         </div>
 
-        {showPopup ? (<Popup close={onClose}></Popup>) : null}
+        {showPopup ? (<Popup close={onClose} setShowPopup={setShowPopup}></Popup>) : null}
       </div>
     </div>
   );

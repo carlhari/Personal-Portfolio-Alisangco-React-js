@@ -8,7 +8,7 @@ function About() {
       <Navigation/>
       <div className="aboutContent">
         <div className="description">
-          <p>Welcome to my Personal Portfolio! This is Carl Hari Alisangco. You can call me by my given name. Currently studying and pursuing a Bachelor of Science in Information Technology. Inspiring FullStack Developer. Busy honing my skills to prepare for my career. Wish me luck :D.</p>
+          <p>Welcome to my Personal Portfolio! This is Carl Hari Alisangco. You can call me by my given name. Currently studying and pursuing a Bachelor of Science in Information Technology. Inspiring FullStack Developer. Busy honing my skills to prepare for my future career. Wish me luck :D.</p>
         </div>
         <div className="techs">
           <p>Technologies I used: </p>
