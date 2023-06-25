@@ -1,24 +1,33 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
-const Confirmation = ({ result, onClose, error }) => {
-    const [isVisible, setIsVisible] = useState(true);
+const Confirmation = ({ error }) => {
+  const [isVisible, setIsVisible] = useState(true);
+  const navigate = useNavigate();
 
-    useEffect(() => {
-      // Hide the popup after 5 seconds
-      const timer = setTimeout(() => {
-        setIsVisible(false);
-      }, 2000);
-  
-      return () => {
-        clearTimeout(timer);
-      };
-    }, []);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(false);
+      // Redirect to the home route after 5 seconds
+      navigate("/");
+    }, 2500);
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [navigate]);
 
   return (
-    <div className="confirmation-overlay" style={{display:isVisible ? "block": "none"}}>
+    <div
+      className="confirmation-overlay"
+      style={{ display: isVisible ? "flex" : "none" }}
+    >
       <div className="confirmation-content">
-        <p>{error == null ? 'Your email has been successfully sent!' : 'Sorry, there was an error sending your email.'}</p>
-        <button onClick={onClose}>Close</button>
+        <p>
+          {!error
+            ? "Your email has been successfully sent!"
+            : "Sorry, there was an error sending your email."}
+        </p>
       </div>
     </div>
   );
