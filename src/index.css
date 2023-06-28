@@ -207,6 +207,7 @@ body{
     gap:5rem;
     flex-wrap: wrap;
     position: relative;
+    height:50vh;
 }
 
 .icons{
@@ -218,33 +219,32 @@ body{
 }
 
 .contact p{
-    font-size: 20px;
+    font-size: 25px;
     color:var(--green);
     font-weight: bold;
-
-
 }
 
 .icons a img{
-    width:50px;
-    height: 50px;
+    width:70px;
+    height: 70px;
 }
 
 .contact{
     display: flex;
     flex-direction: column;
-
+    animation:animationImg 1s ease-in;
 }
 
 .btnSend{
-    font-size: 25px;
+    font-size: 28px;
     font-weight: bolder;
     background-color: var(--green);
-    padding: 10px;
+    padding: 15px;
     color:white;
     border:none;
     border-radius: 10px;
-    cursor:pointer
+    cursor:pointer;
+    animation:animation 1s ease-in;
 }
 
 .popup-overlay {
