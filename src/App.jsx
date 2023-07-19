@@ -1,11 +1,16 @@
 import Navigation from "./components/Navigation";
 import {Link} from 'react-router-dom';
+import { useState } from "react";
 
 function App() {
- 
+
+  const [Show, setShow] = useState(false)
+  const handleMobile = ()=>{
+    setShow(!Show)
+  }
   return (
     <div>
-      <Navigation/>
+      <Navigation handleMobile={handleMobile} Show={Show}/>
       <div className="homeContent">
         <div className="introduction">
           <p>Hello I am Carl Hari Alisangco Inspiring FullStack Developer</p>
@@ -16,7 +21,7 @@ function App() {
           <img src="profile.jpg"/>
         </div>
      </div>
-     
+  
     </div>
     
   )
