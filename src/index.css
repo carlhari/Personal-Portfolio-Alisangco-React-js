@@ -217,6 +217,18 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    animation: fadeIn 1s ease-in;
+}
+
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity:1;
+    }
 }
 
 .workImages{
@@ -234,6 +246,7 @@ body{
     gap:20px;
     padding: 1rem;
     flex-wrap: wrap;
+    animation:animationBot 1s ease-in;
 }
 .works-p p{
     font-size: 20px;
