@@ -19,6 +19,7 @@ function Navigation() {
         <div className="menuBtn">
             <li><Link to='/'>Home</Link></li>
             <li><Link to="/about">About</Link></li>
+            <li><Link to="/works">Works</Link></li>
             <li><Link to="/contact">Contact</Link></li>
         </div>
 
@@ -26,7 +27,7 @@ function Navigation() {
           <span></span>
           <span></span>
           <span></span>
-      </div>
+       </div>
         
     </div>
     <MobileResponse isOpen={isOpen} handleOpen={handleMenuToggle}/>

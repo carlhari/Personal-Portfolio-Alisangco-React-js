@@ -19,8 +19,8 @@ function Contact() {
 
         <div className="contact" style={{opacity: showPopup ? 0 : 1}}>
           <div className="icons">
-            <a href="" target='__blank'><img src="github.png" alt="GitHub" /></a>
-            <a href="" target='__blank'><img src="facebook.png" alt="Facebook" /></a>
+            <a href="https://github.com/Lemon-tech24" target='__blank'><img src="github.png" alt="GitHub" /></a>
+            <a href="https://www.facebook.com/profile.php?id=100009345477616" target='__blank'><img src="facebook.png" alt="Facebook" /></a>
           </div>
 
           <p>Email: alisangcocarl@gmail.com</p>

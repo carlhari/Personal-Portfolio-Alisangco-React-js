@@ -8,6 +8,7 @@ import "./index.css";
 import App from "./App";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Works from "./components/Works";
 
 
 const router = createBrowserRouter([
@@ -24,9 +25,12 @@ const router = createBrowserRouter([
   {
     path:"/contact",
     element: <Contact/>
-  }
+  },
 
- 
+ {
+  path:"/works",
+  element: <Works/>
+ }
 
 ]);
 
