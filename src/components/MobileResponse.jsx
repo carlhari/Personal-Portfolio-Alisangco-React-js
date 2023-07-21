@@ -16,8 +16,7 @@ function MobileResponse({ isOpen  }) {
             <li><Link to='/' onClick={handleMenuItemClick}>Home</Link></li>
             <li><Link to='/about' onClick={handleMenuItemClick}>About</Link></li>
             <li><Link to="/works" onClick={handleMenuItemClick}>Works</Link></li>
-            <li><Link to='/contact' onClick={handleMenuItemClick}>Contact</Link>
-            </li>
+            <li><Link to='/contact' onClick={handleMenuItemClick}>Contact</Link></li>
           </ul>
         </div>
       )}
